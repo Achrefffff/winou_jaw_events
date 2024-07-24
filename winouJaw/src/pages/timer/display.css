@@ -1,0 +1,118 @@
+/* styles.css */
+.container6 {
+  display: flex;
+  height: 100vh;
+  background-image: url('../../assets/POWEREDBYNDIGITAL4.jpg');
+  background-size: cover; 
+  background-position: center; 
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+}
+
+.leftside, .rightside {
+  flex: 1;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.973);
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: rgb(5, 5, 5);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.event-logo6 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.event-card {
+  text-align: center;
+}
+
+.event-card h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.event-card p {
+  margin-bottom: 5px;
+}
+
+.activities {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.activities h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.activity {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  width: calc(50% - 40px); /* 2 activities per row, adjust margin accordingly */
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity:hover {
+  background: rgb(11, 136, 246);
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.rightside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightside h1 {
+  font-size: 90px;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #3002ff, #1E90FF, #1ba0ff, #05e4f46a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(23, 112, 255, 0.5);
+  animation: rotateColors 4s infinite, pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateColors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Styling for error messages */
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+}
